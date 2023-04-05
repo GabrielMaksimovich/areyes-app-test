@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/areyes-app-test/static/css/main.1caf3781.css",
+    "main.js": "/areyes-app-test/static/js/main.e3f796fc.js",
+    "index.html": "/areyes-app-test/index.html",
+    "main.1caf3781.css.map": "/areyes-app-test/static/css/main.1caf3781.css.map",
+    "main.e3f796fc.js.map": "/areyes-app-test/static/js/main.e3f796fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1caf3781.css",
+    "static/js/main.e3f796fc.js"
+  ]
+}
