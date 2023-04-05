@@ -1,6 +1,6 @@
 {
   "name": "react-use-face-detection-demo",
-  "homepage": "https://GabrielMaksimovich.github.io/areyes-app-test",
+  "homepage": "/build/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
