@@ -8,11 +8,12 @@ import {
 
 type Props = {
     handleShowModal: () => void;
+    controlsHeight: number;
 }
 
-const CameraControls: React.FC<Props> = ({ handleShowModal }) => {
+const CameraControls: React.FC<Props> = ({handleShowModal, controlsHeight}) => {
     return (
-        <div className="controller">
+        <div style={{height: controlsHeight}} className="controller">
             <div className="controller__btn controller__btn-left">
                 <FontAwesomeIcon icon={faPlus} size="xl"/>
             </div>

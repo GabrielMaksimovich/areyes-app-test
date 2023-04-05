@@ -3,11 +3,16 @@
   top: 0;
   z-index: 999;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
   height: 100%;
 
   background-color: rgb(232 221 14 / 50%); /* Black w/ opacity */
-  border-radius: 10%;
+  border-radius: 30px;
+
 
   &__content {
     display: flex;
@@ -25,7 +30,7 @@
 
     height: fit-content;
     width: 60%;
-    margin: 3rem auto;
+    //margin: 3rem auto;
     padding: 0.5rem;
 
     @media (max-width: 350px) {
