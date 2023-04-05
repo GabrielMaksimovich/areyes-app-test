@@ -15,7 +15,7 @@ type Props = {
     handleCloseModal: () => void;
 }
 
-const width = 500;
+const width = 400;
 const height = 500;
 
 const WebcamDemo: React.FC<Props> = ({
@@ -68,6 +68,10 @@ const WebcamDemo: React.FC<Props> = ({
                         width: `100%`,
                         position: 'relative',
                         borderRadius: '10%',
+                    }}
+                    videoConstraints={{
+                        width: width,
+                        height: height,
                     }}
                 />
 

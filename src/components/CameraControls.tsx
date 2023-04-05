@@ -13,7 +13,7 @@ type Props = {
 const CameraControls: React.FC<Props> = ({ handleShowModal }) => {
     return (
         <div className="controller">
-            <div className="controller__btn controller__btn-center-left">
+            <div className="controller__btn controller__btn-left">
                 <FontAwesomeIcon icon={faPlus} size="xl"/>
             </div>
 

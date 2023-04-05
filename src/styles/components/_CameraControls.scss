@@ -23,6 +23,10 @@
       transform: scale(0.9);
     }
 
+    &-left {
+      background-color: #7d771c;
+    }
+
 
     &-center {
       width: 80px;
@@ -31,6 +35,7 @@
 
     &-right-upload {
       align-self: end;
+      background-color: #7d771c;
     }
   }
 
