@@ -1,6 +1,6 @@
 # AreYes test app
 
-[DEMO](https://github.com/GabrielMaksimovich/areyes-app-test)
+[DEMO](https://gabrielmaksimovich.github.io/areyes-app-test/)
 
 ### Stack technologies that I used:
 
