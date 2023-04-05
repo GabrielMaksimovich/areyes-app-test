@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  background: black;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}

@@ -1,0 +1,55 @@
+.controller {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 120px;
+  padding: 20px;
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff233;
+
+    transition: transform .3s ease;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+
+
+    &-center {
+      width: 80px;
+      height: 80px;
+    }
+
+    &-right-upload {
+      align-self: end;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    width: 75px;
+
+    &-center {
+      gap: 2px;
+      font-family: 'Alkatra', cursive;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    color: #fff233;
+  }
+}
