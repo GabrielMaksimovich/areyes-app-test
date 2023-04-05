@@ -6,8 +6,6 @@ import {Camera} from '@mediapipe/camera_utils';
 import FaceBoundedBox from "./FaceBoundedBox";
 import {PreviewMessage} from "./PreviewMessage";
 import {Info} from "./Info";
-import useWindowSize from "../hooks/windowResizeHook";
-
 
 type Props = {
     showModal: boolean;
@@ -19,17 +17,13 @@ type Props = {
     handleCloseModal: () => void;
 }
 
-
 const WebcamDemo: React.FC<Props> = ({
-                                         handleCloseModal,
-                                         showModal,
-                                         cameraHeight,
-                                         ratio,
-                                         cameraWidth,
-                                         setShowModal,
-                                     }) => {
-
-
+     handleCloseModal,
+     showModal,
+     cameraHeight,
+     ratio,
+     cameraWidth,
+ }) => {
     const boundedBoxWidthCoeff = useMemo(() => {
         return (30 / ratio) * 1.5;
     }, [ratio]);

@@ -11,12 +11,12 @@ interface FaceBoundedBoxProps {
 }
 
 const FaceBoundedBox: React.FC<FaceBoundedBoxProps> = ({
-                                                           color,
-                                                           size,
-                                                           borderLength,
-                                                           thickness = 2,
-                                                           borderRadius = 0,
-                                                           style
+   color,
+   size,
+   borderLength,
+   thickness = 2,
+   borderRadius = 0,
+   style
 }) => (
     <div className="face-bounded-box" style={{height: size, width: size, ...style}}>
         <div className="face-bounded-box__border face-bounded-box__border--top-left" style={{
@@ -26,6 +26,7 @@ const FaceBoundedBox: React.FC<FaceBoundedBoxProps> = ({
             borderLeft: `${thickness}px solid ${color}`,
             borderTopLeftRadius: borderRadius
         }}/>
+
         <div className="face-bounded-box__border face-bounded-box__border--top-right" style={{
             height: borderLength,
             width: borderLength,
@@ -33,6 +34,7 @@ const FaceBoundedBox: React.FC<FaceBoundedBoxProps> = ({
             borderRight: `${thickness}px solid ${color}`,
             borderTopRightRadius: borderRadius
         }}/>
+
         <div className="face-bounded-box__border face-bounded-box__border--bottom-left" style={{
             height: borderLength,
             width: borderLength,
@@ -40,6 +42,7 @@ const FaceBoundedBox: React.FC<FaceBoundedBoxProps> = ({
             borderLeft: `${thickness}px solid ${color}`,
             borderBottomLeftRadius: borderRadius
         }}/>
+
         <div className="face-bounded-box__border face-bounded-box__border--bottom-right" style={{
             height: borderLength,
             width: borderLength,

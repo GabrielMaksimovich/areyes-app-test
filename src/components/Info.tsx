@@ -6,7 +6,6 @@ type Props = {
 export const Info: React.FC<Props> = ({handleCloseModal}) => {
     return (
         <div className="info">
-
             <div className="info__content">
                 "This service does not collect or store any user metadata.
                 <br/>
