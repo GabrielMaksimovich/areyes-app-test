@@ -29,11 +29,16 @@
     &-center {
       width: 80px;
       height: 80px;
+      background-color: #fff233;
     }
 
     &-right-upload {
       align-self: end;
       background-color: #7d771c;
+    }
+
+    &-right-info {
+      background-color: #fff233;
     }
   }
 
