@@ -17,6 +17,7 @@ type Props = {
     handleCloseModal: () => void;
 }
 
+
 const WebcamDemo: React.FC<Props> = ({
      handleCloseModal,
      showModal,
@@ -24,9 +25,10 @@ const WebcamDemo: React.FC<Props> = ({
      ratio,
      cameraWidth,
  }) => {
-    const boundedBoxWidthCoeff = useMemo(() => {
-        return (30 / ratio) * 1.5;
-    }, [ratio]);
+
+    // const boundedBoxWidthCoeff = useMemo(() => {
+    //     return (30 / ratio) * 1.5;
+    // }, [ratio]);
 
     const {webcamRef, boundingBox, detected} = useFaceDetection({
         faceDetectionOptions: {
@@ -44,7 +46,7 @@ const WebcamDemo: React.FC<Props> = ({
     });
 
     return (
-        <div style={{height: cameraHeight, width: cameraWidth, position: 'relative'}} className="webcam">
+        <div style={{height: `80%`, width: `100%`, position: 'relative'}} className="webcam">
             {boundingBox.map((box, index) => {
                 return !showModal && (
                     <FaceBoundedBox
@@ -58,7 +60,7 @@ const WebcamDemo: React.FC<Props> = ({
                             position: 'absolute',
                             top: `${box.yCenter * 100}%`,
                             left: `${box.xCenter * 100}%`,
-                            width: `${box.width * (100 + boundedBoxWidthCoeff)}%`,
+                            width: `${box.width * 100}%`,
                             height: `${box.height * 90}%`,
                             padding: '0',
                             zIndex: 1,
