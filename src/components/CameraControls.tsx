@@ -1,10 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-
-import {
-    faArrowUpFromBracket,
-    faCamera, faInfo, faPlus
-} from "@fortawesome/free-solid-svg-icons";
+import {faArrowUpFromBracket, faCamera, faInfo, faPlus} from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
     handleShowModal: () => void;
@@ -12,6 +8,19 @@ type Props = {
 }
 
 const CameraControls: React.FC<Props> = ({handleShowModal, controlsHeight}) => {
+    const [counter, setCounter] = useState(0);
+
+    const handleCenterButtonClick = () => {
+        if (counter < 3) {
+            setCounter(prevCounter => prevCounter + 1);
+        }
+
+        if (counter === 3) {
+            setCounter(0);
+            return handleShowModal();
+        }
+    }
+
     return (
         <div style={{height: controlsHeight}} className="controller">
             <div className="controller__btn controller__btn-left">
@@ -19,8 +28,8 @@ const CameraControls: React.FC<Props> = ({handleShowModal, controlsHeight}) => {
             </div>
 
             <div className="controller__wrapper controller__wrapper-center">
-                <p className="controller__text">0/3</p>
-                <div className="controller__btn controller__btn-center">
+                <p className="controller__text">{counter}/3</p>
+                <div className="controller__btn controller__btn-center" onClick={handleCenterButtonClick}>
                     <FontAwesomeIcon icon={faCamera} size="2xl"/>
                 </div>
             </div>
