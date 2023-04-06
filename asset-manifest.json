@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/areyes-app-test/static/css/main.73a732f8.css",
-    "main.js": "/areyes-app-test/static/js/main.5aa32b04.js",
+    "main.js": "/areyes-app-test/static/js/main.f58a6530.js",
     "index.html": "/areyes-app-test/index.html",
     "main.73a732f8.css.map": "/areyes-app-test/static/css/main.73a732f8.css.map",
-    "main.5aa32b04.js.map": "/areyes-app-test/static/js/main.5aa32b04.js.map"
+    "main.f58a6530.js.map": "/areyes-app-test/static/js/main.f58a6530.js.map"
   },
   "entrypoints": [
     "static/css/main.73a732f8.css",
-    "static/js/main.5aa32b04.js"
+    "static/js/main.f58a6530.js"
   ]
 }
